@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Understanding custom events.</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(function() {
+        $('p').bind('click', function() {
+          $(this).css('backgroundColor', 'SandyBrown');
+        });
+        
+        $(document).bind('reset', function(){
+          $('p').css('backgroundColor', 'transparent');
+        });
+      });
+    </script>
+  </head>
+  <body>
+    
+    <p>Click a paragraph for background change.</p>
+    
+    <p>Click a paragraph for background change.</p>
+    
+    <p>Click a paragraph for background change.</p>
+    
+    <p>Click a paragraph for background change.</p>
+    
+  </body>
+</html>
+
+
+
+
